@@ -48,7 +48,7 @@ class ClientController extends Controller
             'gender' => 'required',
             'nationality' => 'required',
             'edu_background' => 'required',
-            'dob' => 'required',
+            'dob' => 'required|date',
             'mode_of_contact' => 'required',
             'nationality' => 'required',
         ]);

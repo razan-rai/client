@@ -23,4 +23,8 @@ $router->group(['namespace' => 'client'], function () use ($router)
 	Route::resource('clients', 'ClientController');
 	
 	Route::get('clients.allclients', 'ClientController@getAllClients')->name('clients.allclients');
+
+	//excel resources
+
+	Route::get('/clients/export-in-excel/{type}', 'ExcelController@downloadExcel');
 });

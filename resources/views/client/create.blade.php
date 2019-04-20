@@ -15,7 +15,7 @@
 		        {{ Form::text('name', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => 'Enter Client Name']) }}
 		        @if ($errors->has('name'))
                     <span class="help-block">
-                        <strong>{{ $errors->first('name') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('name') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -28,7 +28,7 @@
 		        {{ Form::number('phone', null, ['class' => 'form-control', 'maxlength' => '10', 'required' => 'required', 'placeholder' => 'Enter Client Ph. Number']) }}
 		        @if ($errors->has('phone'))
                     <span class="help-block">
-                        <strong>{{ $errors->first('phone') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('phone') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -41,7 +41,7 @@
 		        {{ Form::email('email', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => 'Enter Client E-mail']) }}
 		        @if ($errors->has('email'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('email') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('email') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -54,7 +54,7 @@
 		        {{ Form::text('address', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required',  'placeholder' => 'Enter Client Address']) }}
 		        @if ($errors->has('address'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('address') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('address') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -67,7 +67,7 @@
 		        {{ Form::text('edu_background', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => 'Enter Client Edu Background']) }}
 		        @if ($errors->has('edu_background'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('edu_background') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('edu_background') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -80,7 +80,7 @@
 		        {{ Form::text('nationality', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => 'Enter Client Nationality']) }}
 		        @if ($errors->has('nationality'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('nationality') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('nationality') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -96,7 +96,7 @@
                 </select>
 		        @if ($errors->has('gender'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('gender') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('gender') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -114,7 +114,7 @@
             </div>
 		        @if ($errors->has('dob'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('dob') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('dob') }}</strong>
                     </span>
                 @endif
 		    </div>
@@ -130,7 +130,7 @@
                 </select>
 		        @if ($errors->has('mode_of_contact'))
 		        	<span class="help-block">
-                        <strong>{{ $errors->first('mode_of_contact') }}</strong>
+                        <strong class="alert alert-danger">{{ $errors->first('mode_of_contact') }}</strong>
                     </span>
                 @endif
 		    </div>
