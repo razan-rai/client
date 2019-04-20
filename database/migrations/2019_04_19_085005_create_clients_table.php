@@ -23,7 +23,7 @@ class CreateClientsTable extends Migration
             $table->timestamp('dob');
             $table->string('mode_of_contact');
             $table->string('email')->unique();
-            $table->smallInteger('phone')->unique();
+            $table->bigInteger('phone')->unique();
             $table->rememberToken();
             $table->timestamps();
         });

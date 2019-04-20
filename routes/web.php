@@ -20,5 +20,7 @@ $router->group(['namespace' => 'client'], function () use ($router)
 	
 	
 	//client resource
-	Route::resource('client', 'ClientController', ['only' => ['index', 'store', 'update', 'destroy']]);
+	Route::resource('clients', 'ClientController');
+	
+	Route::get('clients.allclients', 'ClientController@getAllClients')->name('clients.allclients');
 });
